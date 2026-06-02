@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aritra Paul — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <nav class="nav">
+      <a href="#" class="logo">AP</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <p class="hero-label">Hello, I'm</p>
+        <h1 class="hero-title">Aritra Paul</h1>
+        <p class="hero-subtitle">Student Developer & Creator</p>
+        <p class="hero-desc">
+          11th grade at Thomas A. Edison CTE High School.<br>
+          Building games, writing code, and exploring technology.
+        </p>
+        <a href="#work" class="btn">View My Work</a>
+      </div>
+      <div class="scroll-hint">
+        <span></span>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <p>
+            I'm Aritra Paul, a junior at Thomas A. Edison Career and Technical Education High School.
+            I'm passionate about programming, game development, and using technology to create meaningful experiences.
+            From Python applications to Unity games, I love bringing ideas to life through code.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="work">
+      <div class="container">
+        <h2 class="section-title">Selected Work</h2>
+        <div class="projects">
+          <article class="project">
+            <div class="project-info">
+              <h3>Holiday Art Project</h3>
+              <p class="project-tags">Python &middot; CodeSkulptor</p>
+              <p>A creative Python project built in CodeSkulptor3. Exploring interactive programming and visual design through code.</p>
+              <a href="https://py3.codeskulptor.org/?authuser=4#user311_VxFAauJWwTkrOPD.py" target="_blank" rel="noopener" class="project-link">View Project &rarr;</a>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project-info">
+              <h3>Rainforest Cure</h3>
+              <p class="project-tags">Unity &middot; C# &middot; Game Design</p>
+              <p>A game for change. Run through the forest collecting gems that symbolize the forest's health. Restore the rainforest to full health to win. Built with Unity.</p>
+              <a href="https://play.unity.com/en/games/eccac7ef-f7f8-4fc5-ac05-4af259453cf6/game-for-change-aritra-paul" target="_blank" rel="noopener" class="project-link">Play on Unity &rarr;</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <p>Interested in collaborating or want to learn more about my work?</p>
+        <a href="mailto:aritrap2025@gmail.com" class="btn">Say Hello</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Aritra Paul. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Smooth scroll for nav links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+
+    // Header background on scroll
+    window.addEventListener('scroll', () => {
+      document.querySelector('.header').classList.toggle('scrolled', window.scrollY > 50);
+    });
+
+    // Reveal animations on scroll
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.project, .about-content, .contact').forEach(el => {
+      el.classList.add('reveal');
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html>
