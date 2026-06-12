@@ -3,122 +3,361 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aritra Paul — Portfolio</title>
+  <title>Aritra Paul — Game Dev Portfolio</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="header">
+
+  <!-- NAVIGATION -->
+  <header class="header" id="top">
     <nav class="nav">
-      <a href="#" class="logo">AP</a>
+      <a href="#top" class="logo">AP</a>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
-        <li><a href="#work">Work</a></li>
+        <li><a href="#games">Projects</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#competitions">Competitions</a></li>
+        <li><a href="#reflection">Reflection</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
+
+    <!-- HERO / HOME PAGE -->
     <section class="hero">
-      <div class="hero-content">
-        <p class="hero-label">Hello, I'm</p>
-        <h1 class="hero-title">Aritra Paul</h1>
-        <p class="hero-subtitle">Student Developer & Creator</p>
-        <p class="hero-desc">
-          11th grade at Thomas A. Edison CTE High School.<br>
-          Building games, writing code, and exploring technology.
-        </p>
-        <a href="#work" class="btn">View My Work</a>
-      </div>
+      <p class="hero-label">Welcome to my Portfolio</p>
+      <h1 class="hero-title">Aritra Paul</h1>
+      <p class="hero-subtitle">Game Developer & Student Creator</p>
+      <p class="hero-desc">
+        11th grade at Thomas A. Edison CTE High School.<br>
+        I build games, write code, and tell stories through technology.
+      </p>
+      <a href="#games" class="btn">See My Games</a>
+
       <div class="scroll-hint">
         <span></span>
       </div>
     </section>
 
+    <!-- ABOUT / CAREER GOALS -->
     <section id="about" class="about">
       <div class="container">
         <h2 class="section-title">About Me</h2>
         <div class="about-content">
           <p>
             I'm Aritra Paul, a junior at Thomas A. Edison Career and Technical Education High School.
-            I'm passionate about programming, game development, and using technology to create meaningful experiences.
-            From Python applications to Unity games, I love bringing ideas to life through code.
+            I've been learning to code since 10th grade and I'm passionate
+            about using technology to create experiences that are fun.
+          </p>
+          <p>
+            My career goal is to become a game developer or software engineer. I want to use Unity
+            and C# to build games that are fun and tell real stories.
+          </p>
+          <p>
+            The skills I've built so far include Python, HTML, CSS, Unity, and Figma.
+            I'm always looking for ways to improve and learn something new — whether that's
+            a new tool, a new language, or a better way to solve a problem I've already faced.
           </p>
         </div>
       </div>
     </section>
 
-    <section id="work" class="work">
+    <!-- GAME DESIGN COLLECTION -->
+    <section id="games" class="games">
       <div class="container">
-        <h2 class="section-title">Selected Work</h2>
-        <div class="projects">
-          <article class="project">
-            <div class="project-info">
-              <h3>Holiday Art Project</h3>
-              <p class="project-tags">Python &middot; CodeSkulptor</p>
-              <p>A creative Python project built in CodeSkulptor3. Exploring interactive programming and visual design through code.</p>
-              <a href="https://py3.codeskulptor.org/?authuser=4#user311_VxFAauJWwTkrOPD.py" target="_blank" rel="noopener" class="project-link">View Project &rarr;</a>
+        <h2 class="section-title">Game Design Collection</h2>
+
+        <div class="project-grid">
+
+          <!-- Project 1 -->
+          <article class="project-card">
+            <div class="project-header">
+              <span class="project-number">01</span>
+              <div class="project-tags">Unity &middot; C# &middot; Game for Change</div>
             </div>
+            <h3>Rainforest Cure</h3>
+            <p class="project-desc">
+              A game for social change. The player runs through a rainforest collecting gems
+              that represent the forest's health. The goal is to restore the rainforest to full
+              health before time runs out. Built entirely in Unity with C# scripting.
+            </p>
+            <p class="project-reflection">
+              <strong>Reflection:</strong> This was my most ambitious project so far. I learned how
+              to use Unity's physics system, write collision detection in C#, and design a level
+              that actually teaches the player about environmental issues. The biggest challenge
+              was balancing the gameplay — making it fun but also keeping the message clear.
+              If I were to improve it, I would add more levels and a story cutscene at the end.
+            </p>
+            <a href="https://play.unity.com/en/games/eccac7ef-f7f8-4fc5-ac05-4af259453cf6/game-for-change-aritra-paul" target="_blank" class="project-link">Play on Unity →</a>
           </article>
 
-          <article class="project">
-            <div class="project-info">
-              <h3>Rainforest Cure</h3>
-              <p class="project-tags">Unity &middot; C# &middot; Game Design</p>
-              <p>A game for change. Run through the forest collecting gems that symbolize the forest's health. Restore the rainforest to full health to win. Built with Unity.</p>
-              <a href="https://play.unity.com/en/games/eccac7ef-f7f8-4fc5-ac05-4af259453cf6/game-for-change-aritra-paul" target="_blank" rel="noopener" class="project-link">Play on Unity &rarr;</a>
+          <!-- Project 2 -->
+          <article class="project-card">
+            <div class="project-header">
+              <span class="project-number">02</span>
+              <div class="project-tags">Python &middot; CodeSkulptor3</div>
             </div>
+            <h3>Holiday Art Project</h3>
+            <p class="project-desc">
+              An interactive visual art piece built with Python in CodeSkulptor3. This was one
+              of my first creative coding projects, using shapes, colors, and simple animation
+              to create a holiday-themed scene through code alone.
+            </p>
+            <p class="project-reflection">
+              <strong>Reflection:</strong> This project taught me how to think visually with code.
+              Instead of drawing with a pencil, I had to describe every position, size, and color
+              with numbers and functions. It helped me understand coordinate systems and how
+              computers represent graphics. It was a simple project, but it was the first time
+              I felt like I was making real art with programming.
+            </p>
+            <a href="https://py3.codeskulptor.org/?authuser=4#user311_VxFAauJWwTkrOPD.py" target="_blank" class="project-link">View Project →</a>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card">
+            <div class="project-header">
+              <span class="project-number">03</span>
+              <div class="project-tags">Python &middot; CodeSkulptor3</div>
+            </div>
+            <h3>The Math Challenge</h3>
+            <p class="project-desc">
+              A simple interactive tool that anyone can use to sharpen their math skills.
+              It tests the user on addition, subtraction, multiplication, and division —
+              keeping things clean and straightforward so the focus stays on practicing.
+              Built with Python in CodeSkulptor3.
+            </p>
+            <p class="project-reflection">
+              <strong>Reflection:</strong> This project was about building something actually useful.
+              I had to think about how the program should respond to correct and incorrect answers,
+              how to keep score, and how to make the experience feel fair to the user.
+              It taught me how to use conditionals and loops in a practical way —
+              not just as exercises, but as real logic that controls what a program does.
+              It's simple, but it works, and I'm proud of that.
+            </p>
+            <a href="https://py3.codeskulptor.org/#user310_NeBbY1XHXY7H655.py" target="_blank" class="project-link">View Project →</a>
           </article>
 
         </div>
       </div>
     </section>
 
+    <!-- ITERATIVE DESIGN / PROCESS -->
+    <section id="process" class="process">
+      <div class="container">
+        <h2 class="section-title">Design Process</h2>
+        <p class="section-intro">
+          Good games don't appear fully formed — they go through planning, testing, and revision.
+          Here's how I approach the iterative design process.
+        </p>
+
+        <div class="process-steps">
+
+          <div class="step">
+            <div class="step-num">1</div>
+            <div class="step-content">
+              <h3>Brainstorming & Concept</h3>
+              <p>
+                Every project starts with a question: what do I want the player to feel or learn?
+                For Rainforest Cure, I brainstormed around the theme of environmental awareness.
+                I sketched rough ideas on paper — a maze game, a puzzle game, a runner — and
+                picked the runner because it felt the most energetic and matched the urgency
+                of the environmental message.
+              </p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-num">2</div>
+            <div class="step-content">
+              <h3>Game Design Document (GDD)</h3>
+              <p>
+                Before touching Unity, I wrote a short GDD that defined the core loop:
+                run, collect gems, avoid obstacles, restore the forest health bar.
+                I also sketched a rough level layout and decided on the win/lose conditions.
+                Having a document kept me focused when I got stuck during development.
+              </p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-num">3</div>
+            <div class="step-content">
+              <h3>Prototype & Playtest</h3>
+              <p>
+                I built a basic version of Rainforest Cure with placeholder assets first.
+                I had classmates playtest it and collected feedback. The main issue was
+                that the difficulty spike was too sudden in the middle section.
+                I adjusted the gem spawn rate and obstacle speed based on that feedback.
+              </p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-num">4</div>
+            <div class="step-content">
+              <h3>Refinement & Final Build</h3>
+              <p>
+                After playtesting I added a health bar UI, improved the background art,
+                added sound effects, and wrote a short intro screen explaining the game's message.
+                The final version felt much more polished and the environmental theme
+                came through clearly in both the gameplay and the visuals.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- COMPETITIONS -->
+    <section id="competitions" class="competitions">
+      <div class="container">
+        <h2 class="section-title">Competitions & Challenges</h2>
+
+        <div class="comp-grid">
+
+          <div class="comp-card">
+            <div class="comp-badge">G4C</div>
+            <h3>Games for Change</h3>
+            <p>
+              Submitted Rainforest Cure to the Games for Change student challenge.
+              The competition challenges students to create games that address real-world
+              social issues. My entry focused on environmental conservation and the
+              importance of protecting rainforests.
+            </p>
+            <p class="comp-reflection">
+              <strong>What I learned:</strong> Competing in G4C taught me how to pitch a game
+              with a clear message. I had to think beyond just "is this fun?" and ask
+              "does this actually say something?" That shift in thinking has changed
+              how I approach every project now.
+            </p>
+          </div>
+
+          <div class="comp-card">
+            <div class="comp-badge">INFY</div>
+            <h3>InfyAPP Challenge</h3>
+            <p>
+              Competed in the InfyAPP Challenge, run by Infosys Foundation USA at
+              Thomas A. Edison CTE High School. Students build working apps designed
+              to improve New Yorkers' lives, mentored by Infosys volunteers and
+              judged by a panel of industry professionals.
+              My team made it to the semi-finals.
+            </p>
+            <p class="comp-reflection">
+              <strong>What I learned:</strong> Getting to the semi-finals showed me that
+              my work could hold up against real competition. The challenge pushed me
+              to think about who I was building for — not just what the app does,
+              but why someone would actually need it. It was my first time designing
+              with a real user in mind, and that changed how I think about every
+              project since.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- REFLECTION -->
+    <section id="reflection" class="reflection">
+      <div class="container">
+        <h2 class="section-title">Reflection & Goals</h2>
+        <div class="reflection-content">
+
+          <div class="reflection-block">
+            <h3>What I've Learned</h3>
+            <p>
+              Over the past two years in the Game Design pathway, I've grown from someone who
+              could barely write a Python function to a developer who can build and ship a
+              Unity game with C# scripts, collision systems, UI elements, and audio.
+              The biggest growth hasn't been technical though — it's been learning how to
+              finish things. A half-built game means nothing. I've learned to scope my ideas
+              so I can actually complete them.
+            </p>
+          </div>
+
+          <div class="reflection-block">
+            <h3>Strengths & Challenges</h3>
+            <p>
+              My strengths are in the creative side — coming up with ideas, designing levels,
+              and thinking about what an experience should feel like. My biggest challenge
+              is debugging. When my C# code doesn't work the way I expect, it can take a
+              long time to figure out why. I've gotten better at reading error messages and
+              using Debug.Log to trace problems, but it's still something I'm working on.
+            </p>
+          </div>
+
+          <div class="reflection-block">
+            <h3>Career Goals & Final Statement</h3>
+            <p>
+              My goal is to study computer science or game design in college and eventually
+              work in the game industry — either as a developer or a designer. I'm especially
+              interested in games for social impact, creating experiences that change how
+              people think about real-world problems. The Game Design pathway at Edison has
+              given me real tools, real challenges, and real projects I can point to and say:
+              I built that. That's the foundation I'm bringing into senior year and beyond.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
     <section id="contact" class="contact">
       <div class="container">
         <h2 class="section-title">Get In Touch</h2>
-        <p>Interested in collaborating or want to learn more about my work?</p>
-        <a href="mailto:aritrap2025@gmail.com" class="btn">Say Hello</a>
+        <p>Want to collaborate, give feedback, or just say hello?</p>
+        <a href="mailto:aritrap2025@gmail.com" class="btn">Email Me</a>
       </div>
     </section>
+
   </main>
 
   <footer class="footer">
-    <p>&copy; 2026 Aritra Paul. All rights reserved.</p>
+    <p>&copy; 2026 Aritra Paul &mdash; Thomas A. Edison CTE High School</p>
   </footer>
 
   <script>
+    // Header shadow on scroll
+    window.addEventListener('scroll', function() {
+      var header = document.querySelector('.header');
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+
     // Smooth scroll for nav links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-          behavior: 'smooth'
-        });
+    document.querySelectorAll('a[href^="#"]').forEach(function(link) {
+      link.addEventListener('click', function(e) {
+        var target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
       });
     });
 
-    // Header background on scroll
-    window.addEventListener('scroll', () => {
-      document.querySelector('.header').classList.toggle('scrolled', window.scrollY > 50);
-    });
-
-    // Reveal animations on scroll
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
+    // Fade-in animation on scroll
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
         if (entry.isIntersecting) {
           entry.target.classList.add('visible');
         }
       });
     }, { threshold: 0.1 });
 
-    document.querySelectorAll('.project, .about-content, .contact').forEach(el => {
+    document.querySelectorAll('.project-card, .comp-card, .step, .reflection-block, .about-content').forEach(function(el) {
       el.classList.add('reveal');
       observer.observe(el);
     });
   </script>
+
 </body>
 </html>
